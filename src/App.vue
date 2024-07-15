@@ -10,6 +10,8 @@
 
     <Works/>
 
+    <CreatePost/>
+
 
 
 
@@ -24,6 +26,7 @@ import Hero from './components/Hero.vue';
 import About from './components/About.vue'; 
 import Experience from './components/Experience.vue'; 
 import Works from './components/Works.vue'; 
+import CreatePost from './components/Contact.vue'; 
 
 export default {
   components: {
@@ -31,7 +34,8 @@ export default {
     Hero,
     About,
     Experience,
-    Works
+    Works,
+    CreatePost
 
   },
 };

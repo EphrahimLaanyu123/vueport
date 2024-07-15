@@ -1,5 +1,5 @@
 <template>
-<nav>
+  <nav>
     <div class="navs">
 
       <router-link
@@ -7,16 +7,16 @@
         class="flex items-center gap-2"
         @click="handleLinkClick"
       >
-          <div class="navss">
-        <img
-          :src="require('@/assets/bff3254df1cf22ed74923aaa65bc2a08.jpg')"
-          alt="logo"
-          class="w-9 h-9 object-contain"
-        />
-        <p class="">
-          Ephrahim &nbsp;
-          <span class=""> | Coding Mastery</span>
-        </p>
+        <div class="navss">
+          <img
+            :src="require('@/assets/bff3254df1cf22ed74923aaa65bc2a08.jpg')"
+            alt="logo"
+            class="logo"
+          />
+          <p class="">
+            Ephrahim &nbsp;
+            <span class=""> | Coding Mastery</span>
+          </p>
         </div>
       </router-link>
 
@@ -139,23 +139,66 @@ export default {
 <style scoped>
 .navs {
   display: flex;
-  gap:300px;
+  gap: 300px;
+  margin-left: 300px;
 }
-.flex items-center gap-2{
+
+.flex.items-center.gap-2 {
   display: flex;
-  margin:top
+  align-items: center;
+  gap: 2px;
 }
+
 .navss {
-    display: flex;
-
+  display: flex;
+  align-items: center;
 }
+
 .list {
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 100px;
+}
 
+.logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
-.w-9 h-9 object-contain {
-  width:30px;
-  height:10px;
+
+.w-28.h-28.object-contain.cursor-pointer {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  cursor: pointer;
 }
+
+.text-secondary {
+  color: #b0b0b0;
+}
+
+.text-18px {
+  font-size: 18px;
+}
+
+.hover\:text-white:hover {
+  color: #ffffff;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.scoped-navs {
+  display: flex;
+  gap: 300px;
+}
+
 </style>

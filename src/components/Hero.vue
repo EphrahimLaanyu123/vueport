@@ -28,6 +28,7 @@ export default {
   justify-content: center;
   height: 100vh;
   text-align: center;
+  margin-top: 100px;
 }
 
 .hero__left {
