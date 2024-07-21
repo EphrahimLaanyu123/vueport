@@ -117,15 +117,15 @@ export default {
   right: 10px;
   color: black;
   font-size: 24px;
-  text-decoration: none; /* Ensure the link doesn't have an underline */
+  text-decoration: none; 
 }
 
 .source-code-link img {
-  filter: grayscale(100%) invert(0); /* Ensures the image is black */
+  filter: grayscale(100%) invert(0); 
   background-color: black;
   border-radius: 8px;
-
 }
+
 .github-icon {
   width: 24px;
   height: 24px;
@@ -165,38 +165,115 @@ export default {
   color: #e83e8c;
 }
 
-.texts{
+.texts {
   margin-left: 400px;
 }
 
 .h1 {
-    font-size: 20px; /* Adjust font size */
-    color: white; /* Example text color */
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 0.05em; /* Adjust letter spacing */
-    margin: 0; /* Remove margin */
-    margin-top: 150px;
+  font-size: 20px; 
+  color: white;
+  text-transform: uppercase; 
+  letter-spacing: 0.05em; 
+  margin: 0; 
+  margin-top: 150px;
 }
 
 .h2 {
-    font-size: 60px; /* Adjust font size */
-    color: white; /* Example text color */
-    font-weight: bolder;
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 0.05em; /* Adjust letter spacing */
-    margin-top: 20px; /* Remove margin */
-    letter-spacing: 0.025em;
-
+  font-size: 60px; 
+  color: white; 
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; 
+  margin-top: 20px; 
+  letter-spacing: 0.025em;
 }
 
 .p {
-  
-    font-size: 18px; /* Adjust font size */
-    color: white; /* Example text color */
-    letter-spacing: 0.05em; /* Adjust letter spacing */
-    margin: 0; /* Remove margin */
-    letter-spacing: 0.025em;
-
+  font-size: 18px;
+  color: white; 
+  letter-spacing: 0.05em; 
+  margin: 0; 
+  letter-spacing: 0.025em;
 }
 
+
+@media (max-width: 1024px) {
+  .texts {
+    margin-left: 0; 
+    text-align: center; 
+  }
+  
+  .works {
+    margin-top: 50px; 
+  }
+  
+  .works-card {
+    width: 250px; 
+  }
+
+  .works-header {
+    position: relative;
+  }
+
+  .source-code-link {
+    top: 5px; 
+    right: 5px;
+  }
+  
+  .works-title {
+    font-size: 1.25em;
+  }
+
+  .works-description {
+    padding: 0 0.5em 0.5em; 
+  }
+
+  .tags li {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .works-card {
+    width: 100%;
+    margin: 10px 0; 
+  }
+
+  .works-image {
+    height: 150px; 
+    width: 50%;
+
+  }
+
+  .works-title {
+    font-size: 1.1em;
+  }
+
+  .works-description {
+    padding: 0 0.5em; 
+  }
+
+  .tags li {
+    font-size: 0.7em; 
+  }
+  
+  .texts {
+    margin-left: 0;
+    text-align: center; 
+    padding: 0 1em; 
+  }
+
+  .h1 {
+    font-size: 18px; 
+    margin-top: 50px; 
+  }
+
+  .h2 {
+    font-size: 40px; 
+  }
+
+  .p {
+    font-size: 16px;
+  }
+}
 </style>
